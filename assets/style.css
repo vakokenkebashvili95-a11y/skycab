@@ -160,7 +160,9 @@ body {
         );
     background-size: cover;
     background-position: center;
-    height: 686px;
+    padding-top: 109px;
+    padding-bottom: 109px;
+    min-height: 686px;
 }
 .about-us-background-gradient {
     position: absolute;
@@ -188,7 +190,6 @@ body {
     letter-spacing: 0%;
     color: rgba(255, 255, 255, 1);
     text-align: right;
-    padding-top: 109px;
     margin-top: 0;
     margin-left: auto;
     width: 70%;
