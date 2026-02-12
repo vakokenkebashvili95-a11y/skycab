@@ -174,3 +174,98 @@ body {
 .about-us-paragraph p {
     line-height: 30px;
 }
+
+.footer {
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.footer-top {
+    display: flex;
+    padding-top: 130px;
+}
+
+.footer-img {
+    width: 320px;
+    height: 110px;
+    margin-right: 190px;
+}
+
+.footer-top-services {
+    margin-right: 72px;
+}
+
+
+.footer-top-services-title {
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 18px;
+    letter-spacing: 0%;
+    color: rgba(255, 255, 255, 0.65);
+}
+
+.footer-menu {
+    margin-top: 13px;
+}
+
+
+.footer-menu-item {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+
+.footer-menu-item-link {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 20px;
+    letter-spacing: 0%;
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+}
+
+.footer-top-company-title {
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0%;
+    color: rgba(255, 255, 255, 0.65);
+}
+
+.company-menu {
+    padding-top: 10px;
+}
+
+.company-menu-item {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.company-menu-item-link {
+    font-weight: 200;
+    font-size: 19px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgb(55, 54, 54);
+    margin-top: 65px;
+    min-height: 75px;
+    padding-bottom: 35px;
+}
+
+.footer-icons {
+    margin-top: 28px;
+    text-align: right;
+    padding-right: 75px;
+}
+
+
+.footer-icons-icon {
+    color: rgba(255, 255, 255, 0.65);
+    margin-right: 16px;
+    font-size: 20px;
+    text-decoration: none;
+}
