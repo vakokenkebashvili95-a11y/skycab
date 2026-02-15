@@ -1,28 +1,31 @@
 @font-face {
-    font-family:'BPGLEStudio02';src:url(fonts/BPGLEStudio02.eot);
-    src:url(fonts/BPGLEStudio02.eot?#iefix) format('embedded-opentype'),
-    url(fonts/BPGLEStudio02.woff2) format('woff2'),
-    url(fonts/BPGLEStudio02.woff) format('woff'),
-    url(fonts/BPGLEStudio02.ttf) format('truetype'),
-    url(fonts/BPGLEStudio02.svg) format('svg')
+    font-family: 'BPGLEStudio02';
+    src: url(fonts/BPGLEStudio02.eot);
+    src: url(fonts/BPGLEStudio02.eot?#iefix) format('embedded-opentype'),
+        url(fonts/BPGLEStudio02.woff2) format('woff2'),
+        url(fonts/BPGLEStudio02.woff) format('woff'),
+        url(fonts/BPGLEStudio02.ttf) format('truetype'),
+        url(fonts/BPGLEStudio02.svg) format('svg')
 }
 
 @font-face {
-    font-family:'ALKRoundedMtav-Medium';src:url(fonts/ALKRoundedMtav-Medium.eot);
-    src:url(fonts/ALKRoundedMtav-Medium.eot?#iefix) format('embedded-opentype'),
-    url(fonts/ALKRoundedMtav-Medium.woff2) format('woff2'),
-    url(fonts/ALKRoundedMtav-Medium.woff) format('woff'),
-    url(fonts/ALKRoundedMtav-Medium.ttf) format('truetype'),
-    url(fonts/ALKRoundedMtav-Medium.svg) format('svg')
+    font-family: 'ALKRoundedMtav-Medium';
+    src: url(fonts/ALKRoundedMtav-Medium.eot);
+    src: url(fonts/ALKRoundedMtav-Medium.eot?#iefix) format('embedded-opentype'),
+        url(fonts/ALKRoundedMtav-Medium.woff2) format('woff2'),
+        url(fonts/ALKRoundedMtav-Medium.woff) format('woff'),
+        url(fonts/ALKRoundedMtav-Medium.ttf) format('truetype'),
+        url(fonts/ALKRoundedMtav-Medium.svg) format('svg')
 }
 
 @font-face {
-    font-family:'LGVtavdrigina';src:url(fonts/LGVtavdrigina.eot);
-    src:url(fonts/LGVtavdrigina.eot?#iefix) format('embedded-opentype'),
-    url(fonts/LGVtavdrigina.woff2) format('woff2'),
-    url(fonts/LGVtavdrigina.woff) format('woff'),
-    url(fonts/LGVtavdrigina.ttf) format('truetype'),
-    url(fonts/LGVtavdrigina.svg) format('svg')
+    font-family: 'LGVtavdrigina';
+    src: url(fonts/LGVtavdrigina.eot);
+    src: url(fonts/LGVtavdrigina.eot?#iefix) format('embedded-opentype'),
+        url(fonts/LGVtavdrigina.woff2) format('woff2'),
+        url(fonts/LGVtavdrigina.woff) format('woff'),
+        url(fonts/LGVtavdrigina.ttf) format('truetype'),
+        url(fonts/LGVtavdrigina.svg) format('svg')
 }
 
 * {
@@ -53,10 +56,12 @@ body {
     width: 100%;
     height: 100%;
 }
+
 .swiper-slide {
     background-position: center;
     background-size: cover;
 }
+
 .swiper-slide img {
     display: block;
     width: 100%;
@@ -77,6 +82,7 @@ body {
     position: relative;
     z-index: 10;
 }
+
 .header {
     display: flex;
     align-items: center;
@@ -113,7 +119,9 @@ body {
     text-decoration: none;
     opacity: 0.6;
 }
-.menu-item-link:hover, .menu-item-link--active {
+
+.menu-item-link:hover,
+.menu-item-link--active {
     opacity: 1;
 }
 
@@ -171,6 +179,7 @@ body {
     margin-left: auto;
     width: 70%;
 }
+
 .about-us-paragraph p {
     line-height: 30px;
 }
@@ -211,6 +220,7 @@ body {
 .footer-menu-item {
     list-style: none;
 }
+
 .footer-menu-item:not(:first-child) {
     margin-top: 10px;
 }
@@ -224,6 +234,7 @@ body {
     color: rgba(255, 255, 255, 1);
     text-decoration: none;
 }
+
 .footer-menu-item-link:hover {
     opacity: 0.8;
 }
@@ -254,9 +265,92 @@ body {
     font-size: 20px;
     text-decoration: none;
 }
+
 .footer-icons-item:hover {
     opacity: 0.8;
 }
+
 .footer-icons-item:not(:first-child) {
     margin-left: 16px;
+}
+
+
+.contact-us-section {
+    background-color: rgba(136, 136, 136, 1);
+}
+
+.contact-us-main {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 70px;
+    padding-bottom: 65px;
+}
+
+
+.contact-us-info {
+    width: 435px;
+
+}
+
+.contact-us-main-img {
+    margin-top: 10px;
+    width: 750px;
+    height: 90px;
+}
+
+
+.contact-us-info-title {
+    font-family: 'ALKRoundedMtav-Medium', sans-serif;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: -2px;
+    color: rgba(255, 255, 255, 1);
+
+}
+
+.contact-us-info-paragraph {
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 31.2px;
+    letter-spacing: 0%;
+    color: rgba(255, 255, 255, 1);
+    margin-top: 30px;
+
+}
+
+.contact-us-info-mail {
+    display: flex;
+    align-items: center;
+    margin-top: 33px;
+}
+
+.contact-us-info-mail-img {
+    margin-right: 8px;
+}
+
+.contact-us-info-mail-link {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: rgba(255, 255, 255, 1);
+
+}
+
+
+.contact-us-info-phone {
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+}
+
+.contact-us-info-phone-link {
+font-weight: 600;
+font-size: 30px;
+line-height: 100%;
+letter-spacing: 0%;
+color: rgba(255, 255, 255, 1);
+text-decoration: none;
+
 }
