@@ -288,14 +288,14 @@ body {
 
 
 .contact-us-info {
-    width: 435px;
+    width: 30%;
 
 }
 
 .contact-us-main-img {
     margin-top: 10px;
-    width: 750px;
-    height: 90px;
+    width: 55%;
+    object-fit: contain;
 }
 
 
@@ -319,38 +319,28 @@ body {
 
 }
 
-.contact-us-info-mail {
+.contact-us-info-item {
     display: flex;
     align-items: center;
     margin-top: 33px;
 }
 
-.contact-us-info-mail-img {
+.contact-us-info-item + .contact-us-info-item {
+    margin-top: 20px;
+}
+
+.contact-us-info-item-img {
     margin-right: 8px;
 }
 
-.contact-us-info-mail-link {
+.contact-us-info-item-link {
     font-weight: 600;
     font-size: 30px;
     line-height: 100%;
     letter-spacing: 0%;
     color: rgba(255, 255, 255, 1);
-
+    text-decoration: none;
 }
-
-
-.contact-us-info-phone {
-    display: flex;
-    align-items: center;
-    margin-top: 24px;
-}
-
-.contact-us-info-phone-link {
-font-weight: 600;
-font-size: 30px;
-line-height: 100%;
-letter-spacing: 0%;
-color: rgba(255, 255, 255, 1);
-text-decoration: none;
-
+.contact-us-info-item-link:hover {
+    text-decoration: underline;
 }
