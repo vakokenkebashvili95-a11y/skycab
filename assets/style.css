@@ -187,7 +187,18 @@ body {
 .offers-list-right-item2,
 .offers-list-right-item3 {
     border-radius: 15px;
+    cursor: pointer;
 }
+
+.offers-list-left-item:hover,
+.offers-list-left-item2:hover,
+.offers-list-left-item3:hover,
+.offers-list-right-item:hover,
+.offers-list-right-item2:hover,
+.offers-list-right-item3:hover {
+    opacity: 0.6;
+}
+
 
 .offers-list-left-item p,
 .offers-list-left-item2 p,
