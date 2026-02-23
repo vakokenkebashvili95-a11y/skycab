@@ -619,3 +619,36 @@ body {
 .contact-us-info-item-link:hover {
     text-decoration: underline;
 }
+
+.main-content {
+    padding-top: 50px;
+}
+
+
+.main-content-title {
+font-family: 'ALKRoundedMtav-Medium', sans-serif;
+font-weight: 500;
+font-size: 31px;
+line-height: 100%;
+letter-spacing: 0%;
+color: rgba(255, 255, 255, 1);
+
+}
+
+.main-content-paragraph {
+font-weight: 300;
+font-size: 18px;
+line-height: 23px;
+letter-spacing: 0%;
+color: rgba(255, 255, 255, 1);
+width: 62%;
+margin-top: 20px;
+padding-bottom: 20px;
+}
+
+.detail-section-img {
+    height: auto;
+    width: 100%;
+    display: block;
+
+}
