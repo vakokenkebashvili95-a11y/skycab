@@ -69,9 +69,36 @@ body {
 
 .firstSection {
     position: relative;
+}
+
+.firstSection:not(.firstSection--inner-page) {
     height: calc(100vh - 230px);
 }
 
+.firstSection--inner-page {
+    background-color:#971b26;
+}
+.firstSection--inner-page:before {
+    content: '';
+    position: absolute;
+    z-index: 15;
+    display: block;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0) 100%);
+    pointer-events: none;
+}
+
+.firstSection--inner-page .mainContainer--header {
+    z-index: 20;
+}
+
+
+.firstSection--inner-page .header {
+    padding-bottom: 70px;
+}
 .slider {
     position: absolute;
     /* width: 100%; */
@@ -621,7 +648,8 @@ body {
 }
 
 .main-content {
-    padding-top: 50px;
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
 
 
@@ -636,14 +664,17 @@ color: rgba(255, 255, 255, 1);
 }
 
 .main-content-paragraph {
-font-weight: 300;
-font-size: 18px;
-line-height: 23px;
-letter-spacing: 0%;
-color: rgba(255, 255, 255, 1);
-width: 62%;
-margin-top: 20px;
-padding-bottom: 20px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0%;
+    color: rgba(255, 255, 255, 1);
+    width: 62%;
+    margin-top: 20px;
+}
+
+.main-content-paragraph p {
+    line-height: 30px;
 }
 
 .detail-section-img {
@@ -651,4 +682,44 @@ padding-bottom: 20px;
     width: 100%;
     display: block;
 
+}
+
+.inner-page-header-wrapper {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.inner-page-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.back-btn {
+    font-family: 'ALKRoundedMtav-Medium', sans-serif;
+    font-size: 18px;
+    display: inline-block;
+    padding: 15px 30px;
+    /* background-color: #963337; */
+    border: #963337 1px solid;
+    border-radius: 6px;
+    color: #963337;
+    text-decoration: none;
+}
+.back-btn:hover {
+    opacity: 0.8;
+}
+
+.breadcrumbs {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.breadcrumbs-link {
+    color: #000;
+    text-decoration: none;
+}
+.breadcrumbs-link:hover {
+    text-decoration: underline;
 }
