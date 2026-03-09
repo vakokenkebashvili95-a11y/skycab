@@ -35,8 +35,8 @@
     padding: 0;
 }
 
-a {
-    transition: all 0.3s ease;
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -45,10 +45,22 @@ body {
     font-family: 'BPGLEStudio02', sans-serif;
 }
 
+a {
+    transition: all 0.3s ease;
+}
+
 .mainContainer {
     width: 1480px;
     margin-left: auto;
     margin-right: auto;
+}
+
+@media (max-width: 1510px) {
+    .mainContainer {
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
 
 
@@ -136,7 +148,20 @@ body {
 
 .Logo {
     width: 238px;
-    height: 28px;
+}
+@media (max-width: 1200px) {
+    .Logo {
+       display: none;
+    }
+}
+
+.mobile-logo {
+    width: 67px;
+}
+@media (min-width: 1482px) {
+    .mobile-logo {
+        display: none;
+    }
 }
 
 .menu {
@@ -147,6 +172,21 @@ body {
 .menu-item {
     margin-left: 110px;
     list-style: none;
+}
+
+@media (max-width: 1024px) {
+    .header {
+        justify-content: space-between;
+    }
+    .menu {
+        display: none;
+    }
+}
+
+@media (max-width: 1482px) {
+    .menu-item {
+        margin-left: 40px;
+    }
 }
 
 .menu-item:first-child {
@@ -206,7 +246,13 @@ body {
 }
 
 .offers-section {
-    padding-top: 410px;
+    padding-top: 390px;
+}
+
+@media (max-width: 1024px) {
+    .offers-section {
+        padding-top: 240px;
+    }
 }
 
 .offers-title {
@@ -215,17 +261,31 @@ body {
     font-size: 40px;
     line-height: 100%;
     letter-spacing: 0%;
+    padding-top: 20px;
 }
 
-.offers-list {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 65px;
+@media (max-width: 1024px) {
+    .offers-title {
+        margin-bottom: 20px;
+    }
+
+    .offers-list-right {
+        margin-top: 25px;
+    }
 }
 
-.offers-list-left,
-.offers-list-right {
-    width: calc(50% - 12.5px);
+@media (min-width: 1024px) {
+
+    .offers-list {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 65px;
+    }
+
+    .offers-list-left,
+    .offers-list-right {
+        width: calc(50% - 12.5px);
+    }
 }
 
 .offets-list-item-img {
@@ -358,6 +418,73 @@ body {
     height: 112px;
 }
 
+@media (max-width: 1024px) {
+    
+    .offers-list-left-item h2 {
+        font-size: 25px;
+        line-height: 30px;
+        height: auto;
+        padding-top: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+        white-space: initial;
+        overflow: initial;
+        text-overflow: initial;
+    }
+
+    .offers-list-left-item p {
+        font-size: 14px;
+        line-height: 14px;
+        margin-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        height: auto;
+    }
+
+
+    .offers-list-left-item2 h2 {
+        font-size: 25px;
+        line-height: 30px;
+        white-space: initial;
+        overflow: initial;
+        text-overflow: initial;
+    }
+
+
+    .offers-list-left-item2 {
+        padding-bottom: 30px;
+    }
+    .offers-list-left-item2 p {
+        font-size: 14px;
+        line-height: 14px;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-top: 20px;
+        height: auto;
+    }
+
+    .offers-list-left-item3 h2 {
+        padding-top: 50px;
+        font-size: 25px;
+        line-height: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+        white-space: initial;
+        overflow: initial;
+        text-overflow: initial;
+    }
+
+
+    .offers-list-left-item3 p {
+        font-size: 14px;
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        height: auto;
+    }
+
+}
+
 .offers-list-right-item {
     padding-bottom: 110px;
 }
@@ -443,9 +570,75 @@ body {
     height: 84px;
 }
 
+@media (max-width: 1024px) {
+    .offers-list-right-item h2 {
+        font-size: 25px;
+        line-height: 30px;
+        margin-top: 60px;
+        margin-left: 20px;
+        margin-right: 20px;
+        white-space: initial;
+        overflow: initial;
+        text-overflow: initial;
+    }
+
+    .offers-list-right-item p {
+        font-size: 14px;
+        line-height: 14px;
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        height: auto;
+    }
+
+    .offers-list-right-item2 h2 {
+        font-size: 25px;
+        line-height: 30px;
+        margin-top: 60px;
+        margin-left: 20px;
+        margin-right: 20px;
+        white-space: initial;
+        overflow: initial;
+        text-overflow: initial;
+    }
+
+    .offers-list-right-item2 p {
+        font-size: 14px;
+        line-height: 14px;
+        margin-left: 20px;
+        margin-right: 20px;
+        height: auto;
+    }
+    .offers-list-right-item3 h2 {
+        font-size: 25px;
+        line-height: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 30px;
+        white-space: initial;
+        overflow: initial;
+        text-overflow: initial;
+    }
+
+    .offers-list-right-item3 p {
+        font-size: 14px;
+        line-height: 14px;
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        height: auto;
+    }
+}
+
 
 .about-us-section {
-    margin-top: 260px;
+    margin-top: 240px;
+}
+
+@media (max-width: 1024px) {
+    .about-us-section {
+        margin-top: 80px;
+    }
 }
 
 .about-us-title {
@@ -457,6 +650,7 @@ body {
     color: #000000;
     text-align: right;
     margin-bottom: 65px;
+    padding-top: 20px;
 }
 
 
@@ -467,6 +661,13 @@ body {
     padding-top: 110px;
     padding-bottom: 110px;
     min-height: 685px;
+}
+
+@media (max-width: 1024px) {
+    .about-us-background {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
 }
 
 .about-us-paragraph {
@@ -481,6 +682,13 @@ body {
     width: 70%;
 }
 
+@media (max-width: 1024px) {
+    .about-us-paragraph {
+        width: 100%;
+        font-size: 20px;
+    }
+}
+
 .about-us-paragraph p {
     line-height: 30px;
 }
@@ -491,13 +699,28 @@ body {
 
 .footer-top {
     display: flex;
+    align-items: start;
     padding-top: 130px;
+}
+
+@media (max-width: 1024px) {
+    .footer-top {
+        flex-direction: column;
+        padding-top: 70px;
+    }
 }
 
 .footer-img {
     width: 320px;
-    height: 110px;
     margin-right: 190px;
+}
+
+@media (max-width: 1024px) {
+    .footer-img {
+        width: 290px;
+        margin-right: 0;
+        margin-bottom: 46px;
+    }
 }
 
 .footer-top-services {
@@ -515,6 +738,15 @@ body {
 
 .footer-menu {
     margin-top: 13px;
+}
+
+@media (min-width: 767px) {
+    .footer-top-services {
+        margin-right: 72px;
+    }
+    .footer-top-menus-wrapper {
+        display: flex;
+    }
 }
 
 
@@ -536,6 +768,12 @@ body {
     text-decoration: none;
 }
 
+@media (max-width: 767px) {
+    .footer-menu-item-link {
+        font-size: 14px;
+    }
+}
+
 .footer-menu-item-link:hover {
     opacity: 0.8;
 }
@@ -545,6 +783,12 @@ body {
     line-height: 18px;
     letter-spacing: 0%;
     color: rgba(255, 255, 255, 0.65);
+}
+
+@media (max-width: 767px) {
+    .footer-top-company {
+        margin-top: 35px;
+    }
 }
 
 .footer-bottom {
@@ -587,16 +831,30 @@ body {
     padding-bottom: 65px;
 }
 
-
 .contact-us-info {
     width: 30%;
+}
+@media (max-width: 1510px) {
+    .contact-us-info {
+        width: 45%;
+    }
+}
 
+@media (max-width: 1024px) {
+    .contact-us-info {
+        width: 100%;
+    }
 }
 
 .contact-us-main-img {
     margin-top: 10px;
     width: 55%;
     object-fit: contain;
+}
+@media (max-width: 1024px) {
+    .contact-us-main-img {
+        display: none;
+    }
 }
 
 
@@ -610,6 +868,12 @@ body {
 
 }
 
+@media (max-width: 1024px) {
+    .contact-us-info-title {
+        font-size: 25px;
+    }
+}
+
 .contact-us-info-paragraph {
     font-weight: 300;
     font-size: 30px;
@@ -618,6 +882,13 @@ body {
     color: rgba(255, 255, 255, 1);
     margin-top: 30px;
 
+}
+
+@media (max-width: 1024px) {
+    .contact-us-info-paragraph {
+        font-size: 18px;
+        line-height: 20px;
+    }
 }
 
 .contact-us-info-item {
@@ -641,6 +912,12 @@ body {
     letter-spacing: 0%;
     color: rgba(255, 255, 255, 1);
     text-decoration: none;
+}
+
+@media (max-width: 1024px) {
+    .contact-us-info-item-link {
+        font-size: 18px;
+    }
 }
 
 .contact-us-info-item-link:hover {
